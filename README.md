@@ -12,7 +12,9 @@ after that you need to run the bundler
 
 - `$ npm install`
 
-and open your files with live server or similar
+and run your test:
+
+- `$ npm run test`
 
 ## Built With
 
