@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 const cipher = (string, b = 0) => {
   const minLower = 'a'.charCodeAt();
   const minCaps = 'A'.charCodeAt();
