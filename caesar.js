@@ -12,7 +12,7 @@ const cipher = (string, b = 0) => {
     if (a >= minCaps) {
       if (a + b < minCaps + 26) {
         return a + b;
-      } 
+      }
       return minCaps + ((a + b - minCaps) % 26);
     }
     return a;
