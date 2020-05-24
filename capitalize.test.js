@@ -1,4 +1,3 @@
-// import capitalize from './functions';
 const capitalize = require('./capitalize');
 
 test('return "" when an empty strin is giving', () => {

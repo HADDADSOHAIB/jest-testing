@@ -1,4 +1,3 @@
-/* eslint-disable no-else-return */
 const cipher = (string, b = 0) => {
   const minLower = 'a'.charCodeAt();
   const minCaps = 'A'.charCodeAt();
@@ -7,16 +6,14 @@ const cipher = (string, b = 0) => {
     if (a >= minLower) {
       if (a + b < minLower + 26) {
         return a + b;
-      } else {
-        return minLower + ((a + b - minLower) % 26);
       }
+      return minLower + ((a + b - minLower) % 26);
     }
     if (a >= minCaps) {
       if (a + b < minCaps + 26) {
         return a + b;
-      } else {
-        return minCaps + ((a + b - minCaps) % 26);
-      }
+      } 
+      return minCaps + ((a + b - minCaps) % 26);
     }
     return a;
   };
